@@ -1,0 +1,7 @@
+C:\Users\serhat.ur\source\repos\UdemyDocker\WebDocker\obj\Release\netcoreapp3.1\PubTmp\Out\WebDocker.exe
+C:\Users\serhat.ur\source\repos\UdemyDocker\WebDocker\obj\Release\netcoreapp3.1\PubTmp\Out\appsettings.Development.json
+C:\Users\serhat.ur\source\repos\UdemyDocker\WebDocker\obj\Release\netcoreapp3.1\PubTmp\Out\appsettings.json
+C:\Users\serhat.ur\source\repos\UdemyDocker\WebDocker\obj\Release\netcoreapp3.1\PubTmp\Out\WebDocker.dll
+C:\Users\serhat.ur\source\repos\UdemyDocker\WebDocker\obj\Release\netcoreapp3.1\PubTmp\Out\WebDocker.deps.json
+C:\Users\serhat.ur\source\repos\UdemyDocker\WebDocker\obj\Release\netcoreapp3.1\PubTmp\Out\WebDocker.runtimeconfig.json
+C:\Users\serhat.ur\source\repos\UdemyDocker\WebDocker\obj\Release\netcoreapp3.1\PubTmp\Out\WebDocker.pdb
