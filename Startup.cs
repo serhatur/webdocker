@@ -27,8 +27,8 @@ namespace WebDocker
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            services.AddEntityFrameworkNpgsql().AddDbContext<ApiDbContext>(options =>
-      options.UseNpgsql(Configuration.GetConnectionString("DbContext")));
+            services.AddDbContext<ApiDbContext>(options =>
+      options.UseNpgsql(Configuration.GetConnectionString("DbContext"),opt => opt.EnableRetryOnFailure()));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

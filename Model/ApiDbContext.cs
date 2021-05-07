@@ -24,6 +24,9 @@ namespace WebDocker.Model
                 ctx.Gadgets.Add(new Gadget { Name = "flux capacitor" });
                 ctx.Gadgets.Add(new Gadget { Name = "spline reticulator" });
                 ctx.SaveChanges();
+            } else {
+                ctx.Gadgets.Add(new Gadget { Name = DateTime.Now.ToString()});
+                ctx.SaveChanges();
             }
         }
     }

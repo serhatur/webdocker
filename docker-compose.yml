@@ -1,26 +1,33 @@
-# /docker-compose.yml
-version: "3"
- 
-volumes:
-  local_postgres_data: {}
- 
+version: '3.4'
+
+networks:
+  webdocker-dev:
+    driver: bridge
+
 services:
-  web:
-    build: ./
-    ports:
-      - "5000:5000"
-      - "5001:5001"
-    volumes:
-      - ./backend:/app
-      - /app/GadgetDepot/bin
-      - /app/GadgetDepot/obj
-    depends_on:
-      - db
- 
-  db:
-    image: postgres:11.1
+  webdocker:
+        image: webdocker
+        depends_on: 
+            - "postgresql_image"
+        build:
+             context: .
+             dockerfile: Dockerfile
+        ports: 
+         - "8000:80"
+        environment: 
+            DB_CONNECTION_STRING: "host=postgresql_image;port=5432;database=gadget;username=postgres;password=admin"
+        networks: 
+         - webdocker-dev
+  postgresql_image:
+    image: postgres
+    restart: always
     environment:
-      POSTGRES_PASSWORD: postgres
-      POSTGRES_USERNAME: postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=admin
+      - POSTGRES_DB=gadget
+    ports: 
+      - "5432:5432"
     volumes:
-      - local_postgres_data:/var/lib/postgresql/data
+      - ./volumes/data/db:/var/lib/postgresql/data
+    networks: 
+       - webdocker-dev
