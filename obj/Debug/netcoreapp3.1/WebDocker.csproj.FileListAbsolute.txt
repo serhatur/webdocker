@@ -26,6 +26,7 @@ C:\Users\serhat.ur\source\repos\UdemyDocker\WebDocker\bin\Debug\netcoreapp3.1\Np
 C:\Users\serhat.ur\source\repos\UdemyDocker\WebDocker\bin\Debug\netcoreapp3.1\Npgsql.EntityFrameworkCore.PostgreSQL.dll
 C:\Users\serhat.ur\source\repos\UdemyDocker\WebDocker\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
 C:\Users\serhat.ur\source\repos\UdemyDocker\WebDocker\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+C:\Users\serhat.ur\source\repos\UdemyDocker\WebDocker\obj\Debug\netcoreapp3.1\WebDocker.csprojAssemblyReference.cache
 C:\Users\serhat.ur\source\repos\UdemyDocker\WebDocker\obj\Debug\netcoreapp3.1\WebDocker.AssemblyInfoInputs.cache
 C:\Users\serhat.ur\source\repos\UdemyDocker\WebDocker\obj\Debug\netcoreapp3.1\WebDocker.AssemblyInfo.cs
 C:\Users\serhat.ur\source\repos\UdemyDocker\WebDocker\obj\Debug\netcoreapp3.1\WebDocker.csproj.CoreCompileInputs.cache
@@ -38,4 +39,3 @@ C:\Users\serhat.ur\source\repos\UdemyDocker\WebDocker\obj\Debug\netcoreapp3.1\We
 C:\Users\serhat.ur\source\repos\UdemyDocker\WebDocker\obj\Debug\netcoreapp3.1\WebDocker.dll
 C:\Users\serhat.ur\source\repos\UdemyDocker\WebDocker\obj\Debug\netcoreapp3.1\WebDocker.pdb
 C:\Users\serhat.ur\source\repos\UdemyDocker\WebDocker\obj\Debug\netcoreapp3.1\WebDocker.genruntimeconfig.cache
-C:\Users\serhat.ur\source\repos\UdemyDocker\WebDocker\obj\Debug\netcoreapp3.1\WebDocker.csprojAssemblyReference.cache

@@ -25,11 +25,12 @@ namespace WebDocker
 
                 try
                 {
+                    //ApiDbContext.EnsureCreated(services);
                     DbInitializer.Initialize(context);
                 }
                 catch (Exception ex)
                 {
-                    logger.LogError(ex, "An error occurred creating the DB.");
+                    logger.LogError(ex.Message.ToString(), "1An error occurred creating the DB.");
                 }
             }
 

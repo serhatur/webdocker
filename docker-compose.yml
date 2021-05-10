@@ -5,29 +5,46 @@ networks:
     driver: bridge
 
 services:
-  webdocker:
-        image: webdocker
-        depends_on: 
-            - "postgresql_image"
-        build:
-             context: .
-             dockerfile: Dockerfile
-        ports: 
-         - "8000:80"
-        environment: 
-            DB_CONNECTION_STRING: "host=postgresql_image;port=5432;database=gadget;username=postgres;password=admin"
-        networks: 
-         - webdocker-dev
-  postgresql_image:
-    image: postgres
-    restart: always
+  web:
+    image: webdocker
+    depends_on: 
+        - "postgresql_db"
+    build:
+        context: .
+        dockerfile: Dockerfile
+    ports: 
+        - "5000:4500"
+    environment: 
+        DB_CONNECTION_STRING: "host=postgresql_db;port=5432;database=gadget;username=postgres;password=admin"
+    networks: 
+        - webdocker-dev
+  postgresql_db:
+    container_name: 'postgres'
+    image: postgres:latest
+    restart: unless-stopped
+    volumes:
+      - database-data:/var/lib/postgresql/data/         
     environment:
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=admin
       - POSTGRES_DB=gadget
     ports: 
       - "5432:5432"
-    volumes:
-      - ./volumes/data/db:/var/lib/postgresql/data
     networks: 
        - webdocker-dev
+
+  pgadmin:
+    image: dpage/pgadmin4
+    environment:
+      - PGADMIN_DEFAULT_EMAIL=pgadmin@pgadmin4.org
+      - PGADMIN_DEFAULT_PASSWORD=admin
+    ports:
+      - "5005:80"
+    restart: unless-stopped
+    volumes:
+      - pgadmin:/root/.pgadmin
+    depends_on:
+      - postgresql_db
+volumes:
+    database-data:
+    pgadmin:

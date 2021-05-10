@@ -20,6 +20,11 @@ namespace WebDocker.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<Gadget>> Get()
         {
+            if (_ctx.Gadgets.Any())
+            {
+                _ctx.Gadgets.Add(new Gadget { Name = DateTime.Now.ToString() });
+                _ctx.SaveChanges();
+            }
             return _ctx.Gadgets.ToList();
         }
     }

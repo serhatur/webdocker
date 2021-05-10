@@ -1,16 +1,40 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace WebDocker.Model
 {
-    public class ApiDbContext : DbContext
+    public class ApiDbContext : DbContext,IApiDbContext
     {
         public ApiDbContext(DbContextOptions<ApiDbContext> options) : base(options) { }
 
         public DbSet<Gadget> Gadgets { get; set; }
+        protected override void OnModelCreating(ModelBuilder builder)
+        {
+            builder.Entity<Gadget>().HasKey(m => m.Id);
+
+            builder.Entity<Gadget>().HasData
+    (
+    new Gadget { Id = 1,Name = "MSDN Order" },
+    new Gadget { Id = 2,Name = "Docker Order" },
+    new Gadget { Id = 3,Name = "EFCore Order" }
+    );
+
+
+            base.OnModelCreating(builder);
+        }
+
+        public static void EnsureCreated(IServiceProvider provider)
+        {
+            var context = provider.GetService<ApiDbContext>();
+            context.Database.Migrate();
+        }
+    }
+
+    public interface IApiDbContext
+    {
+        DbSet<Gadget> Gadgets { get; set; }
     }
 
     public static class DbInitializer
