@@ -20,6 +20,7 @@ namespace WebDocker.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<Gadget>> Get()
         {
+            //push to master
             if (_ctx.Gadgets.Any())
             {
                 _ctx.Gadgets.Add(new Gadget { Name = DateTime.Now.ToString() });
