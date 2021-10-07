@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ZsHWwmIYHHxSzlLCkzLueeR82mduIsS5yOH+4N0vtcgnHTDc5zCeZ5Ia52BnSb570HD9qsqPyfSCJb0Xohv8Gw==",
+  "dgSpecHash": "fNyPi2cNGVkhRGGF3/AtIO1g6orF1OF7yJ9WmkuHflXj+Icp+S19ZJgU9mPc2HNM4sJR0TpBNqqqX19+LKPWdA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\serhat.ur\\source\\repos\\UdemyDocker\\WebDocker\\WebDocker.csproj",
+  "projectFilePath": "C:\\Users\\serhat.ur\\source\\repos\\UdemyDocker\\WebDocker\\WebDocker.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\serhat.ur\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\serhat.ur\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.1\\microsoft.bcl.hashcode.1.1.1.nupkg.sha512",
@@ -21,13 +21,13 @@
     "C:\\Users\\serhat.ur\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\3.1.11\\microsoft.extensions.logging.abstractions.3.1.11.nupkg.sha512",
     "C:\\Users\\serhat.ur\\.nuget\\packages\\microsoft.extensions.options\\3.1.11\\microsoft.extensions.options.3.1.11.nupkg.sha512",
     "C:\\Users\\serhat.ur\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.11\\microsoft.extensions.primitives.3.1.11.nupkg.sha512",
-    "C:\\Users\\serhat.ur\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.9\\microsoft.visualstudio.azure.containers.tools.targets.1.10.9.nupkg.sha512",
     "C:\\Users\\serhat.ur\\.nuget\\packages\\npgsql\\4.1.8\\npgsql.4.1.8.nupkg.sha512",
     "C:\\Users\\serhat.ur\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\3.1.11\\npgsql.entityframeworkcore.postgresql.3.1.11.nupkg.sha512",
     "C:\\Users\\serhat.ur\\.nuget\\packages\\system.collections.immutable\\1.7.1\\system.collections.immutable.1.7.1.nupkg.sha512",
     "C:\\Users\\serhat.ur\\.nuget\\packages\\system.componentmodel.annotations\\4.7.0\\system.componentmodel.annotations.4.7.0.nupkg.sha512",
     "C:\\Users\\serhat.ur\\.nuget\\packages\\system.diagnostics.diagnosticsource\\4.7.1\\system.diagnostics.diagnosticsource.4.7.1.nupkg.sha512",
-    "C:\\Users\\serhat.ur\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.6.0\\system.runtime.compilerservices.unsafe.4.6.0.nupkg.sha512"
+    "C:\\Users\\serhat.ur\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.6.0\\system.runtime.compilerservices.unsafe.4.6.0.nupkg.sha512",
+    "C:\\Users\\serhat.ur\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.18\\microsoft.netcore.app.host.win-x64.3.1.18.nupkg.sha512"
   ],
   "logs": []
 }

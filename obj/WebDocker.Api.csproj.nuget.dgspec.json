@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\serhat.ur\\source\\repos\\UdemyDocker\\WebDocker\\WebDocker.csproj": {}
+    "C:\\Users\\serhat.ur\\source\\repos\\UdemyDocker\\WebDocker\\WebDocker.Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\serhat.ur\\source\\repos\\UdemyDocker\\WebDocker\\WebDocker.csproj": {
+    "C:\\Users\\serhat.ur\\source\\repos\\UdemyDocker\\WebDocker\\WebDocker.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\serhat.ur\\source\\repos\\UdemyDocker\\WebDocker\\WebDocker.csproj",
-        "projectName": "WebDocker",
-        "projectPath": "C:\\Users\\serhat.ur\\source\\repos\\UdemyDocker\\WebDocker\\WebDocker.csproj",
+        "projectUniqueName": "C:\\Users\\serhat.ur\\source\\repos\\UdemyDocker\\WebDocker\\WebDocker.Api.csproj",
+        "projectName": "WebDocker.Api",
+        "projectPath": "C:\\Users\\serhat.ur\\source\\repos\\UdemyDocker\\WebDocker\\WebDocker.Api.csproj",
         "packagesPath": "C:\\Users\\serhat.ur\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\serhat.ur\\source\\repos\\UdemyDocker\\WebDocker\\obj\\",
         "projectStyle": "PackageReference",
@@ -60,6 +60,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[3.1.18, 3.1.18]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -68,7 +74,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }
